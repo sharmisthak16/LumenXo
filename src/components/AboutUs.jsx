@@ -124,11 +124,52 @@ export default function AboutUs() {
                 To become a global leader in digital innovation, empowering both enterprises and aspiring professionals through technology and mentorship.
               </p>
             </div>
+{/* Certifications Section */}
+<section className="bg-gradient-to-r from-gray-50 via-white to-blue-50 py-14 px-6 border-t border-gray-200">
+  <div className="max-w-7xl mx-auto text-center">
+    <h3 className="text-3xl font-bold text-indigo-600 mb-4">
+      Certified & Verified
+    </h3>
+    <p className="text-lg text-gray-700 mb-10 max-w-2xl mx-auto">
+      We are a <span className="font-semibold text-gray-900">trusted, certified, and verified organization</span>, recognized for our commitment to quality, operational excellence, and client satisfaction through industry-standard certifications.
+    </p>
 
-            <SocialMedia />
+    <div className="flex flex-wrap justify-center items-center gap-10">
+      <div className="flex flex-col items-center">
+        <img
+          src="https://tse1.mm.bing.net/th/id/OIP.lnIF4KuYa_adBsxW1FZ8UwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3"
+          alt="ISO Certified"
+          className="h-24 w-auto object-contain shadow-md rounded-md border border-gray-200 p-2 bg-white"
+        />
+        <p className="mt-2 text-sm text-gray-600">Verified Certification</p>
+      </div>
+
+      <div className="flex flex-col items-center">
+        <img
+          src="https://lawinternships.in/wp-content/uploads/2023/04/Ministry_of_Corporate_Affairs_India.svg.png"
+          alt="Quality Assurance"
+          className="h-24 w-auto object-contain shadow-md rounded-md border border-gray-200 p-2 bg-white"
+        />
+        <p className="mt-2 text-sm text-gray-600">Quality Certified</p>
+      </div>
+
+      <div className="flex flex-col items-center">
+        <img
+          src="https://www.cupolagroup.com/wp-content/uploads/2022/07/iso-18295-contact-center-certification-1024x771.jpg"
+          alt="ISO 18295"
+          className="h-24 w-auto object-contain shadow-md rounded-md border border-gray-200 p-2 bg-white"
+        />
+        <p className="mt-2 text-sm text-gray-600">ISO 18295</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+          
           </div>
         </div>
       </div>
+      
     </div>
     </>
   );

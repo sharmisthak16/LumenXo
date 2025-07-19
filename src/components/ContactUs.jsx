@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaEnvelope, FaPhoneAlt,FaLink  , FaMapMarkerAlt, FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import { FaEnvelope, FaPhoneAlt, FaLink, FaMapMarkerAlt, FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { BsWhatsapp } from 'react-icons/bs'; 
 
@@ -63,19 +63,26 @@ const socialLinks = [
     hoverColor: 'hover:from-blue-700 hover:to-blue-800',
     url: 'https://www.facebook.com/people/LumenXo-Inc/61573160147922/?rdid=Q108uaz8L7Wak14j&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19KfLtjtA2%2F'
   },
-  // {
-  //   icon: <FaTwitter />,
-  //   name: 'Twitter',
-  //   color: 'from-sky-500 to-sky-600',
-  //   hoverColor: 'hover:from-sky-600 hover:to-sky-700',
-  //   url: '#'
-  // },
   {
-    icon: <FaLink />,
-    name: 'LinkTree',
+    icon: <FaTwitter />,
+    name: 'Twitter',
+    color: 'from-blue-500 to-blue-700',
+    hoverColor: 'hover:from-blue-600 hover:to-blue-800',
+    url: 'https://x.com/Lumenxoinc',
+  },
+  {
+    icon: <FaInstagram />,
+    name: 'Instagram',
     color: 'from-pink-500 to-rose-600',
     hoverColor: 'hover:from-pink-600 hover:to-rose-700',
-    url: 'https://x.com/Lumenxoinc'
+    url: 'https://www.instagram.com/lumenxo__/',
+  },
+  {
+    icon: <FaYoutube />,
+    name: 'YouTube',
+    color: 'from-red-500 to-red-700',
+    hoverColor: 'hover:from-red-600 hover:to-red-800',
+    url: 'https://www.youtube.com/@Lumenxo',
   },
   {
     icon: <FaLinkedinIn />,
@@ -86,7 +93,7 @@ const socialLinks = [
   },
   {
     icon: <BsWhatsapp />, 
-     name: 'WhatsApp', 
+    name: 'WhatsApp', 
     color: 'from-green-600 to-green-700',
     hoverColor: 'hover:from-green-700 hover:to-green-800',
     url: 'https://www.whatsapp.com/channel/0029VaxwsYuJUM2jam4hDZ12'

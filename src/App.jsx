@@ -7,6 +7,7 @@ import ContactUs from './pages/ContactMainpage';
 import AboutUs from './components/AboutUs';
 import BookNow from './pages/BookNow';
 import FloatingContacts from './pages/FloatingContacts';
+import Careers from './pages/careers';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/AboutUs" element={<AboutUs />} />
         <Route path='/BookNow' element={<BookNow />} />
+        <Route path='/Careers' element={<Careers/>} />
       
       </Routes>
       

@@ -7,11 +7,13 @@ const Navbar = () => {
   const location = useLocation();
 
   const navItems = [
+    
     { name: 'Home', to: '/' },
     { name: 'About Us', to: '/AboutUs' },
     { name: 'Services', to: '/Services' },
     { name: 'Contact Us', to: '/ContactUs' },
     { name: 'Blog', to: '/Pricing' },
+    { name: 'Careers', to: '/Careers' }
   ];
 
   const isActive = (path) => location.pathname === path;
@@ -33,9 +35,9 @@ const Navbar = () => {
       </AnimatePresence>
 
       <motion.nav
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, ease: 'easeOut' }}
+        // initial={{ y: -100, opacity: 0 }}
+        // animate={{ y: 0, opacity: 1 }}
+        // transition={{ duration: 0.8, ease: 'easeOut' }}
         className="fixed top-0 left-0 right-0 z-50 bg-white text-black border-b shadow-md"
         style={{ fontFamily: "'Inter', 'Poppins', sans-serif" }}
       >
@@ -54,7 +56,10 @@ const Navbar = () => {
                   className="relative h-10 w-10 lg:h-12 lg:w-12 object-cover rounded-full border border-gray-300 shadow"
                 />
               </div>
-              <div className="ml-3">
+              <div
+               className="ml-3"
+               to="/"
+              >
                 <span className="text-2xl lg:text-3xl font-bold bg-gradient-to-r from-violet-600 to-purple-600 bg-clip-text text-transparent">
                   LumenXo
                 </span>
@@ -107,9 +112,9 @@ const Navbar = () => {
                 {navItems.map((item, index) => (
                   <motion.div
                     key={item.name}
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.1, duration: 0.5 }}
+                    // initial={{ opacity: 0, y: -20 }}
+                    // animate={{ opacity: 1, y: 0 }}
+                    // transition={{ delay: index * 0.1, duration: 0.5 }}
                   >
                     <Link
                       to={item.to}
@@ -138,19 +143,19 @@ const Navbar = () => {
           <AnimatePresence>
             {visible && (
               <motion.div
-                initial={{ height: 0, opacity: 0 }}
-                animate={{ height: 'auto', opacity: 1 }}
-                exit={{ height: 0, opacity: 0 }}
-                transition={{ duration: 0.4 }}
+                // initial={{ height: 0, opacity: 0 }}
+                // animate={{ height: 'auto', opacity: 1 }}
+                // exit={{ height: 0, opacity: 0 }}
+                // transition={{ duration: 0.4 }}
                 className="md:hidden overflow-hidden bg-white rounded-2xl mt-4 mb-4 border border-gray-200 shadow"
               >
                 <div className="px-4 py-6 space-y-2">
                   {navItems.map((item, index) => (
                     <motion.div
                       key={item.name}
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: index * 0.1, duration: 0.3 }}
+                      // initial={{ opacity: 0, x: -20 }}
+                      // animate={{ opacity: 1, x: 0 }}
+                      // transition={{ delay: index * 0.1, duration: 0.3 }}
                     >
                       <Link
                         to={item.to}
@@ -165,8 +170,8 @@ const Navbar = () => {
                           <span>{item.name}</span>
                           {isActive(item.to) && (
                             <motion.div
-                              initial={{ scale: 0 }}
-                              animate={{ scale: 1 }}
+                              // initial={{ scale: 0 }}
+                              // animate={{ scale: 1 }}
                               className="w-2 h-2 bg-white rounded-full"
                             />
                           )}

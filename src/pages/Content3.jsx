@@ -38,7 +38,7 @@ export default function TechnologiesSection() {
           {/* Main Image (visible on all sizes) */}
           <div className="rounded-xl overflow-hidden shadow-xl border border-violet-200">
             <img
-              src="https://technoshrine.com/TS/wp-content/uploads/2023/12/h2_team_img04.jpg"
+              src="https://www.upkeepmarketing.com/wp-content/uploads/2023/02/Untitled-design-6-min-1024x922.png"
               alt="Team"
               className="rounded-xl w-full object-cover"
             />
